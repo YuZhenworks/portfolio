@@ -17,12 +17,12 @@ function updateProps() {
 $(window).on('load', function () {
     $('#preloader').css({
         "visibility": "hidden",
-        "transition-delay": "2s"
+        "transition-delay": "1.5s"
     });
     $('.loader').css({
         "opacity": "0",
         "transform": "translate(-50%,-100%)",
-        "transition-delay": "2s"
+        "transition-delay": "1.5s"
     });
 });
 /*loading*/

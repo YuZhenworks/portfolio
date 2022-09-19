@@ -144,3 +144,23 @@ img {
      } 
  }
 }
+
+/*about*/
+.about-text {
+    text-align: center;
+}
+@media (max-width: 767.98px) {
+    .about-text {
+        text-align: start;
+    }
+}
+
+/*header 微調*/
+@media (max-width: 767.98px) {
+    .container-fluid {
+        padding-top: 1rem;
+    }
+    header .container {
+        padding-bottom: 1rem;
+    }
+}
