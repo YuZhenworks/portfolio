@@ -13242,7 +13242,7 @@ img {
 }
 
 .nav-bg {
-  position: fixed;
+  background-color: #3B4966;
   width: 100%;
   z-index: 1020;
 }
