@@ -1,0 +1,146 @@
+/*body*/
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    overflow-x: hidden;
+}
+
+/*滑鼠樣式*/
+body:before {
+  content:"";
+  position:absolute;
+  z-index:999;
+  top:var(--y);
+  left:var(--x);
+  right:0;
+  bottom:0; 
+  width:1.5em;
+  height:1.5em;
+  border-radius:50%;
+  transform:translate(-50%,-50%);
+  background:#fff;
+  mix-blend-mode:difference;
+  pointer-events: none
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nav-bg {
+    // background-color: #3b496677;
+    position: fixed;
+    width: 100%;
+    z-index: 1020;
+}
+
+.nav-link:hover {
+    transform: scale(0.9);
+}
+
+.noto-font {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.logo-size {
+    width: 60px;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.big-title {
+    font-size: 5rem;
+}
+@media (max-width: 767.98px) {
+    .big-title {
+       margin-top: 3rem;
+    }
+}
+
+.copy-right {
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+@media (max-width: 767.98px) {
+    .copy-right {
+        font-size: 0.5rem;
+    }
+}
+
+/*lodaing設定*/
+#preloader {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #3B4966;
+  z-index: 9999;
+  transition: all 0.5s ease;
+}
+
+.loader {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: 0.4s;
+  .loader_bar  {
+    position: relative;
+    width: 350px;
+    height: 2px;
+ }
+ .loader_img {
+     position: absolute;
+     top: 50%;
+     left: 38%;
+     width: 80px;
+     height: 80px;
+     margin: 0 auto;
+     -webkit-animation:spin 2s linear infinite;
+     -moz-animation:spin 2s linear infinite;
+     animation:spin 2s linear infinite;
+ }
+ @media (max-width: 767.98px) {
+    .loader_img {
+        position: absolute;
+        top: -50px;
+        left: 40%;
+    }
+}
+//  @-moz-keyframes spin { 
+//      100% { -moz-transform: scale(1.2); } 
+//  }
+//  @-webkit-keyframes spin { 
+//      100% { -webkit-transform: scale(1); } 
+//  }
+ @keyframes spin { 
+    0% { -webkit-transform: scale(1); 
+         transform:scale(1);  }
+  25% { -webkit-transform: scale(1.1); 
+         transform:scale(1.1); }
+  50% { -webkit-transform: scale(1.2); 
+         transform:scale(1.2); }
+  75% { -webkit-transform: scale(1.1); 
+         transform:scale(1.1); }
+ 100% { 
+         -webkit-transform: scale(1); 
+         transform:scale(1); 
+     } 
+ }
+}

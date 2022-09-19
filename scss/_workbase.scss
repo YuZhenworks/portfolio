@@ -1,0 +1,33 @@
+/*作品基本介紹頁*/ 
+
+.work-space-main {
+    font-size: 1.25rem;
+}
+@media (max-width: 767.98px) {
+    .work-space-main {
+        margin-top: 2rem;
+    }
+}
+
+.btn-next {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+}
+@media (max-width: 767.98px) {
+    .btn-next {
+        position: absolute;
+        bottom: -30px;
+        right: 15px;
+    }
+}
+
+.btn-next:hover {
+    transform: scale(0.9);
+}
+// @include media-breakpoint-up(md) { 
+
+// }
