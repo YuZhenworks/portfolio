@@ -1,61 +1,226 @@
 
 
 .banner {
-    // height: 100vh;
-    // background-image: url(../images/index/作品集網頁banner.jpg);
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: center;
-    .banner-img {
-        // object-fit: cover;
-        // object-position: center;
-        width: 100%;
-        max-height: 100vh;
-    }
-    .banner-title {
+    position: relative;
+    background-image: url(../images/index/作品集網頁banner.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    .btn-contact {
         position: absolute;
-        top: 50%;
-        left: 6%;
+        top:90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 50;
+        padding: 0.5rem 1.5rem;
+    }
+    .readmore-btn {
+        position: absolute;
+        bottom: 10%;
+        left: 8%;
+        transform: translate(-50%, -50%);
+        // 定位置中
+        width: 100px;
+        -webkit-animation: baloon_1 3s infinite;
+        -moz-animation: baloon_1 3s infinite;
+        -ms-animation: baloon_1 3s infinite;
+        -o-animation: baloon_1 3s infinite;
+        animation: baloon_1 3s infinite;
+        -webkit-animation-direction: alternate;
+        -moz-animation-direction: alternate;
+        -ms-animation-direction: alternate;
+        -o-animation-direction: alternate;
+        animation-direction: alternate;
+    }
+
+    @-webkit-keyframes baloon_1{
+    0% { transform:translateY(20px);}
+    50% {transform:translateY(50px);}
+    100% {transform:translateY(20px);}
+    }
+
+    @-moz-keyframes baloon_1{
+    0% { transform:translateY(20px);}
+    50% {transform:translateY(50px);}
+    100% {transform:translateY(20px);}
+    }
+
+    @-ms-keyframes baloon_1{
+    0% { transform:translateY(20px);}
+    50% {transform:translateY(50px);}
+    100% {transform:translateY(20px);}
+    }
+
+    @-o-keyframes baloon_1{
+    0% { transform:translateY(20px);}
+    50% {transform:translateY(50px);}
+    100% {transform:translateY(20px);}
+    }
+
+    @keyframes baloon_1{
+    0% { transform:translateY(20px);}
+    50% {transform:translateY(50px);}
+    100% {transform:translateY(20px);}
     }
 }
 
-.span-type {
-  border-right: .05em solid;
-  animation: caret 1s steps(1) infinite;
+@media (max-width: 767.98px) {
+   .banner {
+    background-image: url(../images/index/banner_rwd.jpg);
+    .btn-contact {
+        padding: 0.5rem 1rem;
+    }
+    .readmore-btn {
+        left: 0;
+    }
+   }
 }
 
-@keyframes caret {
-  50% {
-    border-color: transparent;
-  }
-}
-
-.expertise {
-    background-color: rgb(232, 232, 232);
-    color: black;
-    .expertise-img {
-        width: 200px;
+.about {
+    background-color: #484848;
+    .about-img {
+        background-image: url(../images/index/about/個人照.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 450px;
     }
 }
 @media (max-width: 767.98px) {
-    .expertise-main {
-        padding-left: 0;
-    }
+   .about-text {
+    margin-top: 1rem;
+   }
 }
+
+
+
+.skill {
+    position: relative;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    .skill-card{
+    position: relative;
+    width:300px;
+}
+
+.skill-card .face{
+  width:300px;
+  height: 200px;
+  transition:.4s;
+  
+}
+
+.skill-card .face.face1{
+  position: relative;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-content:center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+
+.skill-card:hover .face.face1{
+  transform: translateY(0);
+  box-shadow:
+    inset 0 0 60px whitesmoke,
+    inset 20px 0 300px #fff,
+    inset -20px 0 300px rgb(95, 95, 95),
+    -10px 0 80px #fff,
+}
+
+.skill-card .face.face1 .content{
+  opacity: .2;
+  transition:  0.5s;
+  text-align: center;
+}
+
+.skill-card:hover .face.face1 .content{
+  opacity: 1;
+ 
+}
+
+.skill-card .face.face1 .content i{
+  font-size: 3em;
+  color: white;
+  display: inline-block;
+   
+}
+
+.skill-card .face.face1 .content h3{
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  
+
+}
+
+.skill-card .face.face1 .content a{
+   transition: .5s;
+}
+
+.skill-card .face.face2{
+   position: relative;
+   background: whitesmoke;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0,0,0,.8);
+  transform: translateY(-100px);
+}
+
+.skill-card:hover .face.face2{
+    transform: translateY(0);
+
+
+}
+
+.skill-card .face.face2 .content p, a{
+  font-size: 14px;
+  margin: 0 ;
+  padding: 0;
+  color:#333;
+}
+
+.skill-card .face.face2 .content a{
+  text-decoration:none;
+  color: black;
+  box-sizing: border-box;
+  outline : 1px dashed #333;
+  padding: 10px;
+  margin: 15px 0 0;
+  display: inline-block;
+}
+
+.skill-card .face.face2 .content a:hover{
+  background: #333 ;
+  color: whitesmoke; 
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+}
+
+.skill-icon {
+    width: 150px;
+}
+@media (max-width: 767.98px) {
+   .skill {
+    padding-left: 0;
+   }
+}
+
 
 
 /*featured*/
-.title {
-    color: black;
-    padding-top: 2rem;
-    margin-bottom: 1rem;
-}
 .content {
-    background-color: white;
     /*hover設定*/
     .featured-content {
       position: relative;
-      width: calc(50% - 0.6rem);
+    //   width: calc(50% - 0.6rem);
       height: 550px;
       margin-bottom: 1rem;
     }
@@ -118,9 +283,10 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 250px;
-        color: rgb(118, 116, 116);
-        background-color: rgb(255, 255, 255);
+        width: 230px;
+        color: #fff;
+        background-color: #404040b0;
+        padding-left: 0.5rem;
     }
     .featured-mark {
         font-size: 0.75rem;
@@ -131,8 +297,8 @@
     .featured-main {
         background-image: linear-gradient(
             to right,
-            #767474,
-            #767474 50%,
+            #fff,
+            #fff 50%,
             #b1b1b1d6 50%
         );
         background-size: 200% 100%;
@@ -143,10 +309,11 @@
         background-clip: text;
         -webkit-text-fill-color: transparent;
         transition: all 0.3s ease-in-out;
+        font-weight: 800;
     }
     .featured-main:before{
       content: '';
-      background: #767474;
+      background: #fff;
       display: block;
       position: absolute;
       bottom: -3px;
@@ -156,9 +323,20 @@
       transition: all 0.3s ease-in-out;
     }
 }
+
+.content-space {
+    width: 3rem;
+    height: 0.5rem;
+}
 @media (max-width: 767.98px) {
     .featured {
         padding-left: 0;
+    }
+    .index-content {
+        flex-direction: column-reverse;
+    }
+    .content-mb {
+        margin-bottom: 1.5rem;
     }
 }
 
@@ -200,7 +378,6 @@
     height: 100%;
 }
 
-
 /*work*/
 .work-type {
     position: relative;
@@ -229,13 +406,3 @@
     }
 }
 
-
-/*footer*/
-.footer-main {
-    margin-top: 100px;
-    margin-bottom: 80px;
-}
-
-.icon {
-    width: 150px;
-}

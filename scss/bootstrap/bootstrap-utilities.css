@@ -12,12 +12,12 @@
 
 .text-bg-primary {
   color: #fff !important;
-  background-color: RGBA(59, 73, 102, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(47, 47, 47, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-secondary {
   color: #000 !important;
-  background-color: RGBA(219, 219, 219, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(255, 255, 255, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-success {
@@ -51,19 +51,19 @@
 }
 
 .link-primary {
-  color: #3B4966 !important;
+  color: #2F2F2F !important;
 }
 
 .link-primary:hover, .link-primary:focus {
-  color: #2f3a52 !important;
+  color: #262626 !important;
 }
 
 .link-secondary {
-  color: #DBDBDB !important;
+  color: #fff !important;
 }
 
 .link-secondary:hover, .link-secondary:focus {
-  color: #e2e2e2 !important;
+  color: white !important;
 }
 
 .link-success {

@@ -1,33 +1,170 @@
 /*作品基本介紹頁*/ 
 
-.work-space-main {
-    font-size: 1.25rem;
-}
-@media (max-width: 767.98px) {
-    .work-space-main {
-        margin-top: 2rem;
+.product-title .container {
+    position: relative;
+    height: 100vh;
+    .product-title-main {
+        padding-bottom: 100px;
     }
-}
-
-.btn-next {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100px;
-    height: 40px;
-    border-radius: 50px;
-}
-@media (max-width: 767.98px) {
-    .btn-next {
+    .prdduct-readmore-btn {
         position: absolute;
-        bottom: -30px;
-        right: 15px;
+        bottom: 20%;
+        left: 5%;
+        transform: translate(-50%, -50%);
+        // 定位置中
+        width: 100px;
+        -webkit-animation: baloon_1 3s infinite;
+        -moz-animation: baloon_1 3s infinite;
+        -ms-animation: baloon_1 3s infinite;
+        -o-animation: baloon_1 3s infinite;
+        animation: baloon_1 3s infinite;
+        -webkit-animation-direction: alternate;
+        -moz-animation-direction: alternate;
+        -ms-animation-direction: alternate;
+        -o-animation-direction: alternate;
+        animation-direction: alternate;
+    }
+    @-webkit-keyframes baloon_1{
+    0% { transform:translateY(20px);}
+    50% {transform:translateY(50px);}
+    100% {transform:translateY(20px);}
+    }
+
+    @-moz-keyframes baloon_1{
+    0% { transform:translateY(20px);}
+    50% {transform:translateY(50px);}
+    100% {transform:translateY(20px);}
+    }
+
+    @-ms-keyframes baloon_1{
+    0% { transform:translateY(20px);}
+    50% {transform:translateY(50px);}
+    100% {transform:translateY(20px);}
+    }
+
+    @-o-keyframes baloon_1{
+    0% { transform:translateY(20px);}
+    50% {transform:translateY(50px);}
+    100% {transform:translateY(20px);}
+    }
+
+    @keyframes baloon_1{
+    0% { transform:translateY(20px);}
+    50% {transform:translateY(50px);}
+    100% {transform:translateY(20px);}
     }
 }
 
-.btn-next:hover {
-    transform: scale(0.9);
+.product-banner {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(0.9);
+    height: 846px;
+    margin-bottom: 100px;
 }
-// @include media-breakpoint-up(md) { 
+
+.product-type-work {
+    position: relative;
+}
+.product-type-work::after {
+    content: 'work';
+    position: absolute;
+    top: -24px;
+    left: -13%;
+    display: inline-block;
+    padding: 8px 24px;
+    border: 1px solid #fff;
+}
+
+.product-type-practice {
+    position: relative;
+}
+.product-type-practice::after {
+    content: 'practice';
+    position: absolute;
+    top: -24px;
+    left: -13%;
+    display: inline-block;
+    padding: 8px 24px;
+    border: 1px solid #fff;
+}
+
+.product-content-main {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.product-introduce {
+    line-height: 1.8;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+@media (max-width: 767.98px) {
+    .product-content-text {
+        margin-bottom: 3rem;
+    }
+}
+
+/*作品背景圖*/
+
+/*UI作品*/
+.ui-insec {
+    background-image: url(../images/index/FEATURED/蟲解食代ui背景.jpg);
+}
+
+.ui-Sweetaste {
+    background-image: url(../images/work_Web/六角練習作品_甜點網站/甜點.jpg);
+}
+
+.ui-chatrobot {
+    background-image: url(../images/work_Web/六角練習作品_聊天機器人/聊天機器人.jpg);
+}
+
+// .ui-baobaopuo {
 
 // }
+
+/*平面作品*/
+.graphic-dreamspace {
+    background-image: url(../images/work_Graphic/3D作品練習_DreamSpace/DreamSpace.jpg);
+}
+
+.graphic-practise-air {
+    background-image: url(../images/work_Graphic/冷氣廣告/冷氣廣告2.jpg);
+}
+
+.graphic-practise-lotion {
+    background-image: url(../images/work_Graphic/化妝水廣告/化妝水廣告.jpg);
+}
+
+
+.graphic-practise-pumpkin {
+    background-image: url(../images/work_Graphic/南瓜罐頭廣告/南瓜罐頭廣告.jpg);
+}
+
+.graphic-practise-Xiaomei {
+    background-image: url(../images/work_Graphic/小美雪糕改造/小美雪糕.jpg);
+}
+
+.graphic-worldwater {
+    background-image: url(../images/work_Graphic/商業攝影作品/生命飲泉_1.jpg);
+}
+
+.graphic-haircut {
+    background-image: url(../images/work_Graphic/大方理髮採訪/大方理髮採訪_封面.jpg);
+}
+
+.graphic-islanddrink {
+    background-image: url(../images/work_Graphic/島飲製茶/島飲_1.jpg);
+}
+
+.graphic-insec {
+    background-image: url(../images/work_Graphic/畢業製作_蟲解食代/B07_第一跨頁_主圖.jpg);
+}
+
+.graphic-duckmale {
+    background-image: url(../images/work_Graphic/鴨公名片/鴨公名片_範例一.jpg);
+}
