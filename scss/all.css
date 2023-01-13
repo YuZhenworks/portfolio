@@ -13570,6 +13570,7 @@ img {
 @media (max-width: 767.98px) {
   .banner {
     background-image: url(../images/index/banner_rwd.jpg);
+    background-attachment: initial;
   }
   .banner .btn-contact {
     padding: 0.5rem 1rem;
