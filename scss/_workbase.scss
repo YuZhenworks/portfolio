@@ -103,6 +103,9 @@
 }
 
 @media (max-width: 767.98px) {
+    .product-banner {
+        background-attachment: initial;
+    }
     .product-content-text {
         margin-bottom: 3rem;
     }
