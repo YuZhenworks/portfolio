@@ -13288,7 +13288,7 @@ img {
 
 .loader .loader_bar {
   position: relative;
-  width: 300px;
+  width: 250px;
   height: 2px;
   background: #9e9fa4ad;
   border-radius: 50px;
