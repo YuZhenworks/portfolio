@@ -48,3 +48,10 @@ $(function () {
     });
 });
 
+$(document).ready(function () {
+    $("#more-btn").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#target").offset().top
+        }, 100);
+    });
+});

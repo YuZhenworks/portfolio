@@ -13610,8 +13610,9 @@ img {
 .skill .skill-card .face {
   width: 300px;
   height: 200px;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: .6s;
+  transition: .6s;
+  cursor: pointer;
 }
 
 .skill .skill-card .face.face1 {
