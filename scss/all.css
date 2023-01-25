@@ -13902,6 +13902,13 @@ img {
           filter: brightness(50%);
 }
 
+@media (max-width: 767.98px) {
+  .img-hover-zoom--brightness img {
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
+  }
+}
+
 .img-hover-zoom--dark img {
   -webkit-transition: -webkit-transform 1.5s, -webkit-filter 1s ease-in-out;
   transition: -webkit-transform 1.5s, -webkit-filter 1s ease-in-out;

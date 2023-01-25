@@ -48,10 +48,12 @@ $(function () {
     });
 });
 
+/*指定區塊*/
 $(document).ready(function () {
     $("#more-btn").click(function () {
         $('html, body').animate({
-            scrollTop: $("#target").offset().top
-        }, 100);
+            'scrollTop': Math.floor($("#target").offset().top)
+        }, 100,"linear");
     });
 });
+
