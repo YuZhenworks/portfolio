@@ -23,7 +23,7 @@ img {
     z-index: 1020;
 }
 
-.nav-link:hover {
+.scale:hover {
     transform: scale(0.9);
 }
 
@@ -55,70 +55,6 @@ img {
        font-size: 2.5rem;
     }
 }
-
-
-/*舊lodaing設定*/
-// #preloader {
-//     position: fixed;
-//   top: 0; left: 0;
-//   width: 100%;
-//   height: 100vh;
-//   background: #2F2F2F;
-//   z-index: 9999;
-//   transition: all 0.5s ease;
-// }
-
-// .loader {
-//     position: absolute;
-//   top: 50%; 
-//   left: 50%;
-//   transform: translate(-50%,-50%);
-//   transition: 0.4s;
-//   .loader_bar  {
-//     position: relative;
-//     width: 350px;
-//     height: 2px;
-// }
-// .loader_img {
-//     position: absolute;
-//      top: 50%;
-//      left: 38%;
-//      width: 60px;
-//      height: 60px;
-//      margin: 0 auto;
-//      -webkit-animation:spin 2s linear infinite;
-//      -moz-animation:spin 2s linear infinite;
-//      animation:spin 2s linear infinite;
-//     }
-//     @media (max-width: 767.98px) {
-//     .loader_img {
-//         position: absolute;
-//         top: -50px;
-//         left: 40%;
-//     }
-// }
-// //  @-moz-keyframes spin { 
-//     //      100% { -moz-transform: scale(1.2); } 
-//     //  }
-// //  @-webkit-keyframes spin { 
-//     //      100% { -webkit-transform: scale(1); } 
-//     //  }
-//     @keyframes spin { 
-//         0% { -webkit-transform: scale(1); 
-//          transform:scale(1);  }
-//          25% { -webkit-transform: scale(1.1); 
-//          transform:scale(1.1); }
-//   50% { -webkit-transform: scale(1.2); 
-//          transform:scale(1.2); }
-//          75% { -webkit-transform: scale(1.1); 
-//             transform:scale(1.1); }
-//             100% { 
-//                 -webkit-transform: scale(1); 
-//          transform:scale(1); 
-//      } 
-//  }
-// }
-// transform: translate(-50%, -50%);
 
 /*loading*/
 #preloader {
